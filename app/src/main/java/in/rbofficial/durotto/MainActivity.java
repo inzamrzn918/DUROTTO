@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        GPS Services
         gps.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if(isChecked){
                 turnGPSOn();
@@ -115,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
             sendBroadcast(poke);
         }
     }
+
+
 
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
